@@ -9,13 +9,13 @@ Whenever there is a new class file (.cpp) make sure to include it in your *Andro
 *The following steps allow you to run the app on an Android Emulator as well as changing the default orientation to Portrait mode*
 * In *grade.properties (Project Properties)* found in Gradle Scripts in Android Studio change the line: 
 
-        **PROP_APP_ABI=armeabi** to
-        **PROP_APP_ABI=armeabi:x86**
+        PROP_APP_ABI=armeabi to
+        PROP_APP_ABI=armeabi:x86
 * In *Application.mk* found under the External Build Files change:
 
-        "**APP_ABI := armeabi**" to   
-        "**APP_ABI := x86**" 
+        APP_ABI := armeabi to 
+        APP_ABI := x86
 * In *AndroidManifest.xml* found in **Prototype > manifests** change:
     
-        "**android:screenOrientation="landscape"**" to
-        "**android:screenOrientation="portrait"**"
+        android:screenOrientation="landscape" to
+        android:screenOrientation="portrait"
